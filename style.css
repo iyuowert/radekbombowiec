@@ -30,4 +30,6 @@ body {
 #header {
     text-align: center; /* wyśrodkowanie tekstu */
     padding-top: 50px; /* dostosowanie odstępu */
+    width: 100%; /* pełna szerokość */
+    margin-top: 50px; /* dodatkowy margines od góry */
 }
