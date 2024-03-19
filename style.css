@@ -14,15 +14,16 @@ body {
     top: 0;
     bottom: 0;
     width: 150px; /* szerokość kolumny */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #navbar a {
-    display: block;
     color: #ffffff; /* kolor linków */
     text-decoration: none;
     margin-bottom: 10px;
-    text-align: center; /* wyśrodkowanie tekstu */
-    line-height: 2; /* wysokość linii */
+    padding: 5px; /* dodatkowy padding dla lepszego wyglądu */
 }
 
 #navbar a:hover {
