@@ -9,12 +9,17 @@ body {
     background-color: #000000; /* czarny pasek */
     color: #ffffff; /* biały tekst */
     padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
 }
 
 #navbar a {
+    display: block;
     color: #ffffff; /* kolor linków */
     text-decoration: none;
-    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 #navbar a:hover {
@@ -22,6 +27,6 @@ body {
 }
 
 #header {
-    text-align: center;
-    padding: 50px 0;
+    margin-left: 150px; /* szerokość czarnego paska */
+    padding: 50px 0 0 20px; /* dostosowanie odstępów */
 }
