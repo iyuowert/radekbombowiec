@@ -1,0 +1,46 @@
+body {
+	margin-left: 100px;
+	margin-right: 100px;
+	background-color: #FFCC80;
+}
+
+.title {
+	color: #cc3300;
+	font-family: Verdana;
+	font-size: 40px;
+	text-align: center;
+}
+
+.opis {
+	font-family: verdana;
+	padding-left: 30px;	
+}
+
+.lista {
+	font-family: verdana;
+	padding-left: 70px;
+}
+
+
+
+a:link
+{
+   color:#060270;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+a:visited
+{
+   color: #060270;
+}
+
+a:hover
+{
+   color: #060270;
+}
+
+a:active
+{
+   color: #060270;
+}
