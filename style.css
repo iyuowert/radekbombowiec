@@ -28,6 +28,6 @@ body {
 }
 
 #header {
-    margin-left: 170px; /* szerokość czarnego paska + odstęp */
-    padding: 50px 20px; /* dostosowanie odstępów */
+    text-align: center; /* wyśrodkowanie tekstu */
+    padding-top: 50px; /* dostosowanie odstępu */
 }
