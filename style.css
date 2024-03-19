@@ -1,35 +1,27 @@
-header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* białe tło */
+    font-family: Arial, sans-serif;
+}
 
-        section {
-            padding: 20px;
-            margin: 20px;
-        }
+#navbar {
+    background-color: #000000; /* czarny pasek */
+    color: #ffffff; /* biały tekst */
+    padding: 10px;
+}
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-	.aside {
-	float: left;
-	width: 200px;
-	height: 1000px;
-	background-image:url('assite-1.png');
-	font-family: Franklin Gothic Medium;
-	font-size: 20px;
-	color: #e2e2e2;
-	text-align: left;	
-	content: "";
-	display: table;
-	clear: both;
-	padding-left: 10px;
-	}
+#navbar a {
+    color: #ffffff; /* kolor linków */
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+#header {
+    text-align: center;
+    padding: 50px 0;
+}
