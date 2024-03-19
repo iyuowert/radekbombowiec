@@ -21,6 +21,8 @@ body {
     color: #ffffff; /* kolor linków */
     text-decoration: none;
     margin-bottom: 10px;
+    text-align: center; /* wyśrodkowanie tekstu */
+    line-height: 2; /* wysokość linii */
 }
 
 #navbar a:hover {
