@@ -13,6 +13,7 @@ body {
     left: 0;
     top: 0;
     bottom: 0;
+    width: 150px; /* szerokość kolumny */
 }
 
 #navbar a {
@@ -27,6 +28,6 @@ body {
 }
 
 #header {
-    margin-left: 150px; /* szerokość czarnego paska */
-    padding: 50px 0 0 20px; /* dostosowanie odstępów */
+    margin-left: 170px; /* szerokość czarnego paska + odstęp */
+    padding: 50px 20px; /* dostosowanie odstępów */
 }
