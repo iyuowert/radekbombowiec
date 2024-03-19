@@ -19,20 +19,25 @@ body {
     justify-content: center;
 }
 
+#navbar {
+    background-color: #000000; /* czarny pasek */
+    color: #ffffff; /* biały tekst */
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 50%; /* przesunięcie o połowę wysokości */
+    transform: translateY(-50%); /* wyśrodkowanie pionowe */
+    width: 150px; /* szerokość kolumny */
+}
+
 #navbar a {
+    display: block;
     color: #ffffff; /* kolor linków */
     text-decoration: none;
     margin-bottom: 10px;
-    padding: 5px; /* dodatkowy padding dla lepszego wyglądu */
+    text-align: center; /* wyśrodkowanie tekstu */
 }
 
 #navbar a:hover {
     text-decoration: underline;
-}
-
-#header {
-    text-align: center; /* wyśrodkowanie tekstu */
-    padding-top: 50px; /* dostosowanie odstępu */
-    width: 100%; /* pełna szerokość */
-    margin-top: 50px; /* dodatkowy margines od góry */
 }
