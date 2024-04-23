@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeria Zdjęć</title>
+<style>
+  body {
+    background-color: #333; /* ciemnoszare tło */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery-item {
+    width: 250px; /* szerokość miniaturki */
+    height: 200px; /* wysokość miniaturki */
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #222; /* ciemnoszare tło miniaturki */
+    transition: transform 0.3s;
+  }
+
+  .gallery-item:hover {
+    transform: scale(1.1); /* powiększenie o 10% po najechaniu kursorem */
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+  .modal-content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="gallery">
+  <div class="gallery-item">
+    <img src="zdjecie1.jpg" onclick="openModal('zdjecie1.jpg')">
+  </div>
+  <div class="gallery-item">
+    <img src="zdjecie2.jpg" onclick="openModal('zdjecie2.jpg')">
+  </div>
+  <div class="gallery-item">
+    <img src="zdjecie3.jpg" onclick="openModal('zdjecie3.jpg')">
+  </div>
+  <div class="gallery-item">
+    <img src="zdjecie4.jpg" onclick="openModal('zdjecie4.jpg')">
+  </div>
+  <div class="gallery-item">
+    <img src="zdjecie5.jpg" onclick="openModal('zdjecie5.jpg')">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+<script>
+  function openModal(imgSrc) {
+    document.getElementById('modalImg').src = imgSrc;
+    document.getElementById('myModal').style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById('myModal').style.display = "none";
+  }
+</script>
+
+</body>
+</html>
